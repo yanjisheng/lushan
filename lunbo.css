@@ -1,0 +1,31 @@
+#lunbo{
+	margin:0px auto;
+	width:750px;
+	height:500px;
+	background-repeat:no-repeat;
+	background-size:750px auto;
+	background-color:#ccffcc;
+}
+#lunbo_bottom{
+	list-style-type:none;
+	position:relative;
+	top:475px;
+	text-align:center;
+	margin:0px;
+	padding:0px;
+}
+#lunbo_bottom li{
+	display:inline-block;
+	width:40px;
+	height:20px;
+	text-align:center;
+	background-color:#000000;
+	color:#ffffff;
+	cursor:pointer;
+}
+#lunbo_bottom li.active{
+	background-color:#ff8800;
+}
+#lunbo_bottom li.noactive{
+	background-color:#000000;
+}

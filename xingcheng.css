@@ -1,0 +1,51 @@
+.addForm{
+	text-align:center;
+}
+#customerName{
+	width:120px;
+}
+#telephone{
+	width:120px;
+}
+#route{
+	width:200px;
+}
+#date{
+	width:120px;
+}
+#people{
+	width:60px;
+}
+#myRoute div{
+	text-align:center;
+}
+#myRoute div span{
+	display:inline-block;
+}
+#myRoute div span.route{
+	width:250px;
+}
+#myRoute div span.date{
+	width:180px;
+}
+#myRoute div span.people{
+	width:100px;
+}
+#myRoute div span.total{
+	width:120px;
+}
+#submitButton{
+	margin:0px 50px;
+	text-align:right !important;
+}
+#totalPrice{
+	margin-right:10px;
+}
+#brouserWarning{
+	display:block;
+	clear:left;
+	text-align:center;
+	font-size:12px;
+	border:1px solid #0000ff;
+	background-color:#ffcccc;
+}

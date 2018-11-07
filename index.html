@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<title>庐山旅游-首页</title>
+<link rel="stylesheet" href="style.css"/>
+<link rel="stylesheet" href="lunbo.css"/>
+<style>
+#adleft, #adright{
+	position:fixed;
+	top:150px;
+	z-index:99;
+	width:120px;
+	height:360px;
+	background-color:#ccffcc;
+	border:1px solid #ff0000;
+	font-size:12px;
+}
+#adleft span, #adright span{
+	font-size:36px;
+	color:#009900;
+}
+#adleft{
+	left:100px;
+}
+#adright{
+	right:100px;
+}
+</style>
+<script src="lunbo.js"></script>
+<script>
+function close(object){
+	document.getElementById(object).style.display='none';
+}
+</script>
+</head>
+<body onload="changePic(1)">
+<div id="adleft"><a href="javascript:close('adleft')">关闭</a><br/>虽然我觉得加这个广告会让页面变得<span>很丑</span>，但既然老师<span>要求</span>，那还是加上吧。</div>
+<div id="adright"><a href="javascript:close('adright')">关闭</a><br/>虽然我觉得加这个<span>广告</span>会让页面变得很丑，但既然老师要求，那还是<span>加上</span>吧。</div>
+<div id="out">
+<h1>庐山旅游欢迎您！</h1>
+<!--导航菜单-->
+<ul id="menubar">
+	<li><a href="index.html">首页</a></li>
+	<li><a href="jianjie.html">旅行社简介</a></li>
+	<li><a href="#">精品线路</a><a class="hidden" href="xianlu1.html">线路1：庐山三日游</a><a class="hidden" href="xianlu2.html">线路2：庐山西海一日游</a><a class="hidden" href="xianlu3.html">线路3：东林寺、温泉两日游</a></li>
+	<li><a href="xingcheng.html">预订行程</a></li>
+	<li><a href="lianxi.html">联系我们</a><a class="hidden" style="width:inherit;text-align:center;" href="liuyan.html">给我留言</a></li>
+</ul>
+<!--图片轮播效果-->
+<h2>庐山风光</h2>
+<div id="lunbo">
+	<ul id="lunbo_bottom">
+		<li onclick="movePic('left')">&lt;</li>
+		<li onclick="changePic(1)">1</li>
+		<li onclick="changePic(2)">2</li>
+		<li onclick="changePic(3)">3</li>
+		<li onclick="changePic(4)">4</li>
+		<li onclick="movePic('right')">&gt;</li>
+	<ul>
+</div>
+<h2>庐山旅游简介</h2>
+<p>庐山，又名匡山、匡庐，位于江西省九江市庐山市境内。介于东经115°52′—116°8′，北纬29°26′—29°41′之间。东偎婺源、鄱阳湖，南靠滕王阁，西邻京九铁路大通脉，北枕滔滔长江。长约25千米，宽约10千米，主峰汉阳峰，海拔1474米。山体呈椭圆形，典型的地垒式块段山。</p>
+<p>庐山以雄、奇、险、秀闻名于世，素有“匡庐奇秀甲天下”之美誉 。是世界文化遗产、世界地质公园、国家重点风景名胜区、国家AAAAA级旅游景区、中华十大名山、中国最美十大名山、全国重点文物保护单位、中国四大避暑胜地、首批全国文明风景旅游区示范点。</p>
+<p>庐山自古命名的山峰便有171座。群峰间散布冈岭26座，壑谷20条，岩洞16个，怪石22处。水流在河谷发育裂点，形成许多急流与瀑布，瀑布22处，溪涧18条，湖潭14处。最为著名的三叠泉瀑布，落差达155米，有“飞流直下三千尺，疑是银河落九天”之美句。</p>
+<p>庐山发育有地垒式断块山与第四纪冰川遗迹，以及第四纪冰川地层剖面和早元古代星子岩群地层剖面。迄今为止，在庐山共发现一百余处重要冰川地质遗迹，完整地记录了冰雪堆积、冰川形成、冰川运动、侵蚀岩体、搬运岩石、沉积泥砾的全过程，是中国东部古气候变化和地质特征的历史记录。与欧洲阿尔卑斯地区及北美地区第四纪冰川活动特征有许多相似之处庐山地质公园内发育有地垒式断块山与第四纪冰川遗迹，以及第四纪冰川地层剖面和早元古代星子岩群地层剖面。</p>
+<p>庐山有着丰富的野生动物和珍稀动物。尚知兽类有33种，鸟类171种。庐山之麓的鄱阳湖还有世界著名的候鸟保护区。珍稀动物金钱豹分布于山麓山顶。庐山昆虫有2000余种，其中多稀珍品种和新种。首次在庐山发现或以庐山（牯岭）命名的昆虫有33种。鄱阳湖鱼类有139种。</p>
+<p>庐山风景秀丽，文化内涵深厚，集教育名山、文化名山、宗教名山、政治名山于一身。从司马迁“南登庐山，观禹所疏九江”，到陶渊明、昭明太子、李白、白居易、苏轼、王安石、黄庭坚、陆游、朱熹、康有为、胡适、郭沫若等文坛巨匠1500余位登临庐山，留下4000余首诗词歌赋的文化名山的确立；陈运和的诗作《庐山》称“三叠泉直泻青史，五老峰耸立古诗，仙人洞深藏抱负龙首崖腾飞情思，含鄱口难吐感触，芦林湖汇聚现实，花径走过历代名士，天池阅尽苍茫人世，白鹿体壮养于书院东林绿荫尽染佛寺”、“可见蒋介石残留足迹，敬仰毛泽东居住旧址，匡庐奇秀甲天下，世纪巨著出自此”。</p>
+<p>南宋淳熙七年（1180年），大哲学家朱熹振兴了白鹿洞书院。他在此开创了中国讲学式教育的先河。他以儒家传统的政治伦理思想为支柱，继往开来，建立了庞大的“理学”体系。自此，“理学”成为中国封建社会的主体思想，影响了中国七百年的历史进程。到上世纪初世界25个国家风格的庐山别墅群的兴建；从胡先骕创建中国第一个亚热带山地植物园，到李四光“第四纪冰川”学说的创立。庐山植物园因有地形屏障，亚热带、南亚热带植物在此驯化生长良好。2009年，庐山植物园荣膺中国世界纪录协会中国最早的亚热带山地植物园。中国地质学家李四光提出第四纪期间庐山有冰川发育，引起国际学术界瞩目。因而庐山又是自然科学研究的重要场所。</p>
+<p>庐山名胜古迹遍布，千百年来，无数文人墨客、名人志士在此留下了丹青墨迹。有毛泽东写的“天生一个仙人洞，无限风光在险峰”的吕洞宾修仙而居的仙人洞；唐寅《庐山图》中的观音桥；周敦颐写出《爱莲说》的爱莲池等。歌咏庐山的诗词歌赋有4000余首。东晋诗人谢灵运的《登庐山绝顶望诸峤》、南朝诗人鲍照的《望石门》等，是中国最早的山水诗之一。陶渊明一生以庐山为背景进行创作，所开创的田园诗风，影响了其后整个中国诗坛。唐代诗人李白，五次游历庐山，为庐山留下《庐山遥寄卢侍御虚舟》等14首诗歌，尤其《望庐山瀑布》广为流传。宋代诗人苏轼的《题西林壁》：“不识庐山真面目，只缘身在此山中”，流传广泛，影响深远。</p>
+<p style="text-indent:0px;text-align:center"><a href="#">回到顶部</a></p>
+<!--页脚制作人信息-->
+<div id="foot">
+	2018年中软国际培训生寒假作业 | 燕计湦制作<br/>Copyright &copy; 2018
+</div>
+</div>
+</body>
+<script>
+	setInterval("movePic('right')",5000);
+</script>
+</html>

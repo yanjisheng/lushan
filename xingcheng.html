@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<title>庐山旅游-预订行程</title>
+<link rel="stylesheet" href="style.css"/>
+<link rel="stylesheet" href="xingcheng.css"/>
+<script src="xingcheng.js"></script>
+</head>
+<body>
+<div id="out">
+<h1>庐山旅游欢迎您！</h1>
+<!--导航菜单-->
+<ul id="menubar">
+	<li><a href="index.html">首页</a></li>
+	<li><a href="jianjie.html">旅行社简介</a></li>
+	<li><a href="#">精品线路</a><a class="hidden" href="xianlu1.html">线路1：庐山三日游</a><a class="hidden" href="xianlu2.html">线路2：庐山西海一日游</a><a class="hidden" href="xianlu3.html">线路3：东林寺、温泉两日游</a></li>
+	<li><a href="xingcheng.html">预订行程</a></li>
+	<li><a href="lianxi.html">联系我们</a><a class="hidden" style="width:inherit;text-align:center;" href="liuyan.html">给我留言</a></li>
+</ul>
+<div id="brouserWarning">推荐使用Firefox浏览器访问本页面！<a href="javascript:hide()">不再显示</a></div>
+<h2>顾客信息</h2>
+<div class="addForm">
+	联系人姓名：<input type="text" id="customerName"/>
+	联系电话：<input type="text" id="telephone"/>
+	<input type="checkbox" id="agreement"/>同意<a href="xieyi.html">用户协议</a>
+</div>
+<h2>添加行程</h2>
+<div class="addForm">
+	线路：<select id="route"><option value="1">线路1：庐山三日游(￥2400.00)</option><option value="2">线路2：庐山西海一日游(￥800.00)</option><option value="3">线路3：东林寺、温泉两日游(￥1600.00)</option></select>
+	出发日期：<input type="date" id="date"/>
+	人数：<input type="number" min="1" id="people"/>
+	<input type="button" onclick="addRoute()" value="添加行程"/>
+</div>
+<h2>我的行程</h2>
+<div id="myRoute">
+	<div id="submitButton">
+		<span id="totalPrice">总计：0元</span>
+		<input type="button" value="提交行程" onclick="submitRoute()">
+	</div>
+</div>
+<div id="foot">
+	2018年中软国际培训生寒假作业 | 燕计湦制作<br/>Copyright &copy; 2018
+</div>
+</div>
+</body>
+</html>
